@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robust Food: Donation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href = "stylesheetdonation.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+ <div class="header">
+  <div id="logo-img"><img src="LOGO.png" alt=""  width= 100 height= "64" ></div>
+    <ul>
+     <li><a href="contact.html">Contact Us</a></li>
+     <li><a href="AboutUs.html">About Us</a></li>
+	 <li><a class="active" href="donation.html">Donation</a></li>
+	 <li><a href="Recipe Page.html">Recipe</a></li>
+	 <li><a href="homepage.html">Home</a></li>
+	 </ul>
+	</div>
+ 
+<main>	
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <img src="image1.jpg" style="width:100%">
+		  <div class="text"><strong>"No One Has Ever Become Poor By Giving"</strong><br>
+		  <p class="inside">Every donation will be used to buy nutritious food for those in need.<br>
+							  You can change the world together with us!<p></div> 
+		 <div class="scroll">
+			<a  href="#section2" style="text-decoration:none"> I want to Donate!</a>
+		 </div>
+		</div>
+	
+		<div class="mySlides fade">
+		  <img src="image2.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="image3.jpg" style="width:100%">
+		</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	
+	<div class="ourform" id="section2" name="ourform">
+		<form name="ourform" id="ourform" method="post">
+			
+			<h1> Donation Form</h1>
+			<p class="form-reminder"> You must fill all the required fields </p>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Insert your name">
+			
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="julie@example.com">
+			
+			<label for="num">Contact No.</label>
+			<input type="text" id="num" name="num" placeholder="012 34567890">
+			
+			<label for="bank">Bank</label>
+			<div class="select-bank">
+				<select id="bank" name="bank">
+				  <option value="0">Select Bank</option>
+				  <option value="1">AFFIN BANK (M) BERHAD</option>
+				  <option value="2">ALLIANCE BANK MALAYSIA BERHAD</option>
+				  <option value="3">AMBANK (M) BERHAD</option>
+				  <option value="4">BANK ISLAM MALAYSIA BERHAD</option>
+				  <option value="5">BANK KERJASAMA RAKYAT MALAYSIA BERHAD</option>
+				  <option value="6">HONG LEONG (M) BERHAD</option>
+				  <option value="7">HASBC (M) BERHAD</option>
+				  <option value="8">MAYBANK BERHAD</option>
+				  <option value="9">PUBLIC BANK (M) BERHAD</option>
+				  <option value="10">RHB BANK BERHAD</option>
+				</select>
+			</div>
+			
+			<label for="creditcard">Credit Card Number</label>
+			<input type="text" id="creditcard" name="creditcard" placeholder="xxxxxxxxxx" >			
+			
+			<label for="amount">Amount (RM)</label>
+			<input type="text" id="amount" name="amount" placeholder="00.00">
+
+			<input type="reset" class="reset-button" value="Reset">
+			<input type="submit" class="donate-button" value="Submit" onclick="validateForm(event)">
+		</form>
+</main>	
+		<footer>
+			<p class="copyright">Copyright &copy; 2021 Robust Food All Rights Reserved.</p>
+		</footer>	
+<script>
+	
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	}
+
+	function validateForm(e){
+	
+		let name=document.ourform.name.value;		
+		let email=document.ourform.email.value;		
+		let num=document.ourform.num.value;		
+		let creditcard=document.ourform.creditcard.value;		
+		let amount=document.ourform.amount.value;
+		
+		if(name==""){
+			alert("Name is required");
+			e.preventDefault();
+			return false;
+		}
+		else if(!isNaN(name)){
+			alert("Please enter a valid name");
+			e.preventDefault();
+			return false;
+		}
+		
+		if(email==""){
+			alert("Email is required");
+			e.preventDefault();
+			return false;
+		} 
+		else {
+			let regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			let validEmail = regEx.test(email);
+			if(!validEmail) {
+				alert("Please enter a valid email address");
+				e.preventDefault();
+				return false;
+				}
+		}
+		
+		if(num==""){
+			alert("Contact number is required");
+			e.preventDefault();
+			return false;
+		}
+		else if(isNaN(num)){
+			alert("Please enter a valid contact number");
+			e.preventDefault();
+			return false;
+		}
+		
+		if(creditcard==""){
+			alert("Credit card number is required");
+			e.preventDefault();
+			return false;
+		}		
+		else if(isNaN(creditcard)){
+			alert("Please enter a valid credit card number");
+			e.preventDefault();
+			return false;
+		}
+
+		if(amount==""){
+			alert("Amount is required");
+			e.preventDefault();
+			return false;
+		} 
+		else if(isNaN(amount)){
+			alert("Please enter a valid camount");
+			e.preventDefault();
+			return false;
+		}
+	}
+	
+</script>
+</body>
+</html>
