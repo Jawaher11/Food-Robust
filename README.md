@@ -1,4 +1,5 @@
-# Group B 
+# Group B ( Food-Robust )
+
 Members Name
 
 1. JAWAHER ABDULRAHIM (1636616)
@@ -37,8 +38,8 @@ Members Name
       prepared in accordance with hygiene standards and health rules under periodic supervision  of specialists. 
 
     Besides that, our website also provides a donation page which can be used to encourage people to be involved
-    in the donation project. We provided a donation form which will help in collecting money from users. The money
-    gained from the payment donation will be used to make foods to be distributed. 
+    in the donation project. We provided a donation form which will help in collecting money from users. The 
+    money gained from the payment donation will be used to make foods to be distributed. 
 
 # Project Site Map
 
