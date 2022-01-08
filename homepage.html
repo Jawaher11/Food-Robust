@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   Robust Food
+  </title>
+  <link href="stylej.css" rel="stylesheet">
+</head>
+
+<body>
+  <body style="font-family: sans-serif">
+
+     <div class="topnav">
+     
+        <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="donation.html">Donation</a></li>
+        <li><a href="Recipe Page.html">Recipe</a></li>
+        <li><a class="active" href="homepage.html">Home</a></li>
+<div id="robustlogo"> <img src="HIMG/LOGO.png" width="100" height="64" </div>
+       </ul>
+     </div>
+
+  <!-- start main cover section -->
+  <section class="img-cover-section">
+  </section>
+
+  <div class="container-search top">
+    <h1 class="text-big" id="program">
+        Join Us: Get updates & Get Invovled
+    </h1>
+  </div>
+
+  <div class="container-search bottom">
+    <input type="text" name="search" id="search" placeholder="Email">
+    <button class="btn btn-sm">Subscribe</button>
+  </div>
+  <!-- end main cover section -->
+
+  <!-- start recipie section -->
+  <div class="secondsection">
+    <div class="secondsection-content">
+      <h1 class="text-big" id="program">
+        Feast your eyes on our menu and explore!
+      </h1>
+      <button class="btn btn-sm" onclick="window.location.href='Recipe Page.html'">View The Menu</button>
+    </div>
+  </div>
+  <!-- end recipie section -->
+
+  <!-- start donation section -->
+  <div class="temp-container">
+    <div class="overlay"></div>
+    <div class="parent-wrapper">
+      <img class="donation-img" src="HIMG/thirdsection.png"/>
+
+      <div class="donattion-wrapper">
+        <h1>We've got act but we need your help</h1>
+        <button class="donate-btn" onclick="window.location.href='donation.html'">Donate Now!</button>
+      </div>
+    </div>
+    <!-- end donation section -->
+
+    <!-- start live chat section -->
+
+    <div class="fourthsection">
+        <img class="img3" src="HIMG/Halal-logo.png"/>
+
+        <button class="open-button" onclick="openForm()"><div></div>
+          Live Chat
+        </button>
+      <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Live Chat</h1>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+   
+    <!-- end live chat section -->
+
+
+<footer>
+  <p style= "margin-left:10px;font-size: 16px;font-family: Times New Roman;">Copyright &copy; 2021 Robust Food All Rights Reserved.</p>
+</footer>
+
+<script src="scriptHome.js"></script>
+
+</body>
+</html>

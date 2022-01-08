@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robust Food: Donation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href = "stylesheetdonation.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+ <div class="header">
+  <div id="logo-img"><img src="img/LOGO.png" alt=""  width= 100 height= "64" ></div>
+    <ul>
+     <li><a href="contact.html">Contact Us</a></li>
+     <li><a href="AboutUs.html">About Us</a></li>
+	 <li><a class="active" href="donation.html">Donation</a></li>
+	 <li><a href="Recipe Page.html">Recipe</a></li>
+	 <li><a href="homepage.html">Home</a></li>
+	 </ul>
+	</div>
+ 
+<main>	
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <img src="img/image1.jpg" style="width:100%">
+		  <div class="text"><strong>"No One Has Ever Become Poor By Giving"</strong><br>
+		  <p class="inside">Every donation will be used to buy nutritious food for those in need.<br>
+							  You can change the world together with us!<p></div> 
+		 <div class="scroll">
+			<a  href="#section2" style="text-decoration:none"> I want to Donate!</a>
+		 </div>
+		</div>
+	
+		<div class="mySlides fade">
+		  <img src="img/image2.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="img/image3.jpg" style="width:100%">
+		</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	
+	<div class="ourform" id="section2" name="ourform">
+		<form name="ourform" id="ourform" method="post">
+			
+			<h1> Donation Form</h1>
+			<p class="form-reminder"> You must fill all the required fields </p>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Insert your name">
+			
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="julie@example.com">
+			
+			<label for="num">Contact No.</label>
+			<input type="text" id="num" name="num" placeholder="012 34567890">
+			
+			<label for="bank">Bank</label>
+			<div class="select-bank">
+				<select id="bank" name="bank">
+				  <option value="0">Select Bank</option>
+				  <option value="1">AFFIN BANK (M) BERHAD</option>
+				  <option value="2">ALLIANCE BANK MALAYSIA BERHAD</option>
+				  <option value="3">AMBANK (M) BERHAD</option>
+				  <option value="4">BANK ISLAM MALAYSIA BERHAD</option>
+				  <option value="5">BANK KERJASAMA RAKYAT MALAYSIA BERHAD</option>
+				  <option value="6">HONG LEONG (M) BERHAD</option>
+				  <option value="7">HASBC (M) BERHAD</option>
+				  <option value="8">MAYBANK BERHAD</option>
+				  <option value="9">PUBLIC BANK (M) BERHAD</option>
+				  <option value="10">RHB BANK BERHAD</option>
+				</select>
+			</div>
+			
+			<label for="creditcard">Credit Card Number</label>
+			<input type="text" id="creditcard" name="creditcard" placeholder="xxxxxxxxxx" >			
+			
+			<label for="amount">Amount (RM)</label>
+			<input type="text" id="amount" name="amount" placeholder="00.00">
+
+			<input type="reset" class="reset-button" value="Reset">
+			<input type="submit" class="donate-button" value="Submit" onclick="validateForm(event)">
+		</form>
+</main>	
+		<footer>
+			<p class="copyright">Copyright &copy; 2021 Robust Food All Rights Reserved.</p>
+		</footer>	
+<script src="scriptDonation.js"></script>
+</body>
+</html>
