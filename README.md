@@ -95,6 +95,13 @@ https://www.healthygfasian.com/category/recipes/malaysian/page/2/
 Contact Us (Retrieved March 2021 from
 https://thrive-magazine.co.uk/wp-content/uploads/2020/03/functionalfoods.jpg
 
+Homepage halal pic from   https://www.shutterstock.com/search/halal+logo 
+
+main pic from https://www.logopik.com/item/donation-logo-vector/ 
+
+Second section pic from https://www.pinclipart.com/pindetail/mJhxTi_japan-cuisine-png-clipart-transparent-png/
+
+
 
 
 
